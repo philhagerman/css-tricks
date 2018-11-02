@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>    
+    <title>Background move on scroll</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section></section>
+
+    <script type="text/javascript">
+        function backgroundScroll(e) {
+            var scroll_position = window.pageYOffset / 2;
+            var section = document.querySelector('section');
+            section.style.backgroundPositionX= -scroll_position + 'px';
+        }
+
+        window.onscroll=backgroundScroll;
+    </script>
+</body>
+</html>
